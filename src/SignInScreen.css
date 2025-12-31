@@ -1,0 +1,214 @@
+/* Container simulates the phone screen */
+.sign-in-container {
+  width: 390px;
+  height: 844px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: auto; /* Allows scrolling if content is too tall */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter',
+    sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 1. Header */
+.sign-in-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #111827;
+  padding: 0;
+  margin-right: 16px;
+}
+
+.sign-in-header span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  /* This trick centers the title */
+  flex-grow: 1;
+  text-align: center;
+  margin-right: 40px; /* Offset the space of the back button */
+}
+
+/* 2. Main Body Content */
+.sign-in-body {
+  padding: 24px;
+}
+
+.welcome-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.welcome-subtitle {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.5;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+
+/* 3. Form */
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* Space between form elements */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.input-group input {
+  font-size: 16px;
+  padding: 14px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #f59e0b; /* Orange border on focus */
+}
+
+/* Password field wrapper */
+.password-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.password-wrapper input {
+  width: 100%;
+}
+
+.pw-toggle {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #6b7280;
+}
+
+.forgot-password {
+  font-size: 14px;
+  font-weight: 500;
+  color: #f59e0b;
+  text-decoration: none;
+  text-align: right;
+  margin-top: -12px; /* Pulls it up closer to password */
+}
+
+.sign-in-btn {
+  padding: 18px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #422006;
+  background-color: #f59e0b;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 8px;
+}
+
+.sign-in-btn:hover {
+  background-color: #d97706;
+}
+
+.create-account-link {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.create-account-link a {
+  color: #f59e0b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* 4. Social Login Section */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #9ca3af;
+  margin: 32px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.divider:not(:empty)::before {
+  margin-right: 0.5em;
+}
+
+.divider:not(:empty)::after {
+  margin-left: 0.5em;
+}
+
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.social-btn .social-icon {
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+.social-btn.facebook {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+}
+
+.social-btn.google {
+  background-color: #ffffff;
+  color: #374151;
+}

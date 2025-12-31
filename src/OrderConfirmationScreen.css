@@ -1,0 +1,83 @@
+/* Container simulates the phone screen */
+.confirmation-container {
+  width: 390px;
+  height: 844px;
+  /* Light creamy yellow background */
+  background-color: #fffbeb;
+  border-radius: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter',
+    sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Hide overflow */
+  text-align: center;
+}
+
+/* 1. Header */
+.confirmation-header {
+  height: 60px; /* Just for spacing */
+  flex-shrink: 0;
+}
+
+/* 2. Main Body */
+.confirmation-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.checkmark-circle {
+  width: 80px;
+  height: 80px;
+  background-color: #f59e0b; /* Orange */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 32px;
+}
+
+.confirmation-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 16px 0;
+  max-width: 280px;
+  line-height: 1.4;
+}
+
+.confirmation-text {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.6;
+  max-width: 340px;
+}
+
+/* 3. Footer Button */
+.confirmation-footer {
+  padding: 24px;
+  flex-shrink: 0;
+}
+
+.browsing-btn {
+  width: 100%;
+  padding: 18px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #422006; /* Dark brown */
+  background-color: #fde68a; /* Light yellow */
+  border: 1px solid #f59e0b; /* Orange border */
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.browsing-btn:hover {
+  background-color: #fcd34d; /* Slightly darker yellow */
+}

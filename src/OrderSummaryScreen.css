@@ -1,0 +1,160 @@
+/* Container simulates the phone screen */
+.order-container {
+  width: 390px;
+  height: 844px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter',
+    sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Hide overflow */
+}
+
+/* 1. Header */
+.order-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  flex-shrink: 0;
+}
+
+.order-back-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #111827;
+  padding: 0;
+  margin-right: 16px;
+}
+
+.order-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  /* This trick centers the title */
+  flex-grow: 1;
+  text-align: center;
+  margin-right: 40px; /* Offset the space of the back button */
+}
+
+/* 2. Main Body */
+.order-body {
+  flex-grow: 1; /* Takes up remaining space */
+  overflow-y: auto; /* This makes the body scrollable! */
+  padding: 24px;
+}
+
+/* Order Item */
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px dashed #d1d5db;
+}
+
+.item-name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.item-name span:first-child {
+  color: #f59e0b;
+}
+.item-name span:nth-child(2) {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.item-price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Links Section */
+.order-links {
+  padding: 24px 0;
+  border-bottom: 1px dashed #d1d5db;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.order-link svg {
+  color: #9ca3af;
+  font-size: 20px;
+}
+
+/* Price Summary */
+.price-summary {
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.price-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.price-line span:last-child {
+  font-weight: 600;
+  color: #374151;
+}
+
+.price-line.total {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+}
+.price-line.total span:last-child {
+  color: #111827;
+}
+
+/* 3. Footer Button */
+.order-footer {
+  padding: 24px;
+  border-top: 1px solid #f3f4f6;
+  background-color: #fff;
+  flex-shrink: 0;
+}
+
+.continue-btn {
+  width: 100%;
+  padding: 18px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #422006;
+  background-color: #f59e0b;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.continue-btn:hover {
+  background-color: #d97706;
+}

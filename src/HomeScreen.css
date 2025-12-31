@@ -1,0 +1,233 @@
+/* Container simulates the phone screen */
+.home-container {
+  width: 390px;
+  height: 844px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter',
+    sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Hide overflow */
+}
+
+/* 1. Header */
+.home-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid #f3f4f6;
+  flex-shrink: 0; /* Prevents header from shrinking */
+}
+
+.location-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.location-icon {
+  font-size: 24px;
+  color: #f59e0b; /* Orange */
+}
+
+.location-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.location-label {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.location-address {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #f3f4f6; /* Light gray */
+  border: none;
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+}
+
+/* 2. Main Body */
+.home-body {
+  flex-grow: 1; /* Takes up remaining space */
+  overflow-y: auto; /* This makes the body scrollable! */
+  padding: 0 24px;
+}
+
+.main-banner-img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+/* Section Header (for "Featured", "All Mess", etc.) */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.section-header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.section-header .see-all {
+  font-size: 14px;
+  font-weight: 500;
+  color: #f59e0b;
+  text-decoration: none;
+}
+
+/* Horizontal Scroll Section */
+.horizontal-scroll {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto; /* This enables horizontal scroll! */
+  padding-bottom: 16px; /* Space for scrollbar */
+  /* Hide scrollbar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.horizontal-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.restaurant-card-sm {
+  width: 150px;
+  flex-shrink: 0; /* Prevents cards from shrinking */
+}
+
+.restaurant-card-sm img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.restaurant-card-sm h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 8px 0 4px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.restaurant-card-sm p {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0 0 8px 0;
+  white-space: nowrap;
+}
+
+/* Card Info (shared by sm and lg cards) */
+.card-info {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  gap: 4px 8px; /* Row and column gap */
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.card-info span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.card-info .info-icon {
+  font-size: 14px;
+}
+
+.card-info .info-icon.star {
+  color: #f59e0b;
+}
+
+/* Promo Banner */
+.promo-banner {
+  width: 100%;
+  height: 100px; /* Adjust as needed */
+  background-color: #fffbeb; /* Light creamy yellow */
+  border-radius: 16px;
+  margin-top: 16px;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  /* Add your background image from Figma here */
+  /* background-image: url('path/to/your/doodle-image.png'); */
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+.promo-text h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #422006; /* Dark brown */
+  margin: 0;
+}
+
+.promo-text p {
+  font-size: 12px;
+  color: #6b7280;
+  max-width: 60%; /* Don't let text overlap image */
+  line-height: 1.5;
+  margin-top: 4px;
+}
+
+/* Vertical List Section */
+.vertical-section {
+  padding-bottom: 16px;
+}
+
+.restaurant-card-lg {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.restaurant-card-lg img {
+  width: 100%;
+  height: 160px; /* Taller image for vertical cards */
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.restaurant-card-lg .card-lg-info {
+  padding: 12px 0;
+}
+
+.restaurant-card-lg h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.restaurant-card-lg p {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0 0 8px 0;
+}
