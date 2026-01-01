@@ -98,16 +98,21 @@ body {
 }
 
 .get-started-btn {
-  width: 100%;
-  padding: 18px 0;
-  font-size: 16px;
-  font-weight: 700;
-  color: #422006; /* Dark brown text */
-  background-color: #f59e0b; /* A nice amber/orange */
+  /* Keep your existing colors and padding */
+  background-color: #f2994a; 
+  color: white;
+  padding: 15px 30px;
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.2s;
+
+  /* ADD THESE LINES TO CENTER IT */
+  display: block;      /* This allows margin auto to work */
+  margin: 40px auto 0; /* Centers it horizontally; 40px space on top */
+  width: fit-content;  /* Ensures the button doesn't stretch full width */
+  text-decoration: none; /* In case you changed it to a Link tag */
+  text-align: center;
 }
 
 .get-started-btn:hover {

@@ -32,7 +32,7 @@ function App() {
       <Route path="/signin" element={<SignInScreen />} />
       <Route path="/location" element={<LocationScreen />} />
       <Route path="/home" element={<HomeScreen />} />
-      <Route path="/restaurant" element={<RestaurantMenuScreen />} />
+      <Route path="/menu" element={<RestaurantMenuScreen />} />
       <Route path="/cart" element={<OrderSummaryScreen />} />
       <Route path="/payment" element={<PaymentScreen />} />
       <Route path="/confirmation" element={<OrderConfirmationScreen />} />

@@ -124,17 +124,22 @@
   margin-top: -12px; /* Pulls it up closer to password */
 }
 
+/* Update this class in SignInScreen.css */
 .sign-in-btn {
-  padding: 18px 0;
-  font-size: 16px;
-  font-weight: 700;
-  color: #422006;
-  background-color: #f59e0b;
+  background-color: #e67e22;
+  color: white;
+  padding: 15px;
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.2s;
-  margin-top: 8px;
+  text-decoration: none;
+
+  /* --- ADD THESE THREE LINES TO CENTER --- */
+  display: block;         /* Allows margin: auto to work */
+  margin: 20px auto;      /* Centers horizontally; adjust 20px for spacing */
+  width: 90%;             /* Or use fit-content if you want it smaller */
+  text-align: center;
 }
 
 .sign-in-btn:hover {
